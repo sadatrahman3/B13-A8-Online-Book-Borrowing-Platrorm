@@ -1,6 +1,6 @@
 import { betterAuth } from "better-auth";
-import { mongodbAdapter } from "better-auth/adapters/mongodb";
 import { MongoClient } from "mongodb";
+import { mongodbAdapter } from "better-auth/adapters/mongodb";
 
 const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/book-borrowing";
 const vercelUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined;
@@ -8,20 +8,12 @@ const baseURL = process.env.BETTER_AUTH_URL || vercelUrl || "http://localhost:30
 const secret = process.env.BETTER_AUTH_SECRET || "super-secret-key-change-in-production";
 
 const client = new MongoClient(uri);
-
-const getTrustedOrigins = () => {
-  const origins = ["http://localhost:3000"];
-  if (process.env.VERCEL_URL) {
-    origins.push(`https://${process.env.VERCEL_URL}`);
-  }
-  return origins;
-};
+const db = client.db();
 
 export const auth = betterAuth({
-  database: mongodbAdapter(client.db()),
+  database: mongodbAdapter(db, { client }),
   baseURL: baseURL,
   secret: secret,
-  trustedOrigins: getTrustedOrigins(),
   emailAndPassword: {
     enabled: true,
   },
