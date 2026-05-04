@@ -9,10 +9,19 @@ const secret = process.env.BETTER_AUTH_SECRET || "super-secret-key-change-in-pro
 
 const client = new MongoClient(uri);
 
+const getTrustedOrigins = () => {
+  const origins = ["http://localhost:3000"];
+  if (process.env.VERCEL_URL) {
+    origins.push(`https://${process.env.VERCEL_URL}`);
+  }
+  return origins;
+};
+
 export const auth = betterAuth({
   database: mongodbAdapter(client.db()),
   baseURL: baseURL,
   secret: secret,
+  trustedOrigins: getTrustedOrigins(),
   emailAndPassword: {
     enabled: true,
   },
