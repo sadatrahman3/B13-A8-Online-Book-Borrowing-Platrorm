@@ -36,7 +36,8 @@ export default function RegisterPage() {
       toast.success("Registration successful! Please login.");
       router.push("/login");
     } catch (err: any) {
-      const message = err?.message || "An unexpected error occurred";
+      console.error("Registration error:", err);
+      const message = err?.message || err?.toString() || "An unexpected error occurred";
       toast.error(message);
     } finally {
       setLoading(false);
