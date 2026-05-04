@@ -2,7 +2,7 @@
 
 A seamless and modern web application designed to digitize the traditional library experience. Users can explore a vast collection of books, filter by categories, and borrow titles digitally.
 
-**Live URL:** [https://booknest.vercel.app](https://booknest.vercel.app) *(Update with your actual Vercel URL)*
+**Live URL:** https://b13-a8-online-book-borrowing-platro.vercel.app/
 
 ## Purpose
 
