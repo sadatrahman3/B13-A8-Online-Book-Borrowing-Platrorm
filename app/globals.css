@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+  body {
+    @apply bg-base-100 text-base-content;
+  }
+}
+
+@layer components {
+  .marquee-text {
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .book-card {
+    @apply card bg-base-200 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+}
