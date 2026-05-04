@@ -2,10 +2,19 @@ import { betterAuth } from "better-auth";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 import { MongoClient } from "mongodb";
 
-const client = new MongoClient(process.env.MONGODB_URI!);
+const uri = process.env.MONGODB_URI || "";
+
+let db: any = null;
+
+if (uri) {
+  const client = new MongoClient(uri);
+  db = client.db();
+}
+
+const databaseConfig = db ? mongodbAdapter(db) : undefined;
 
 export const auth = betterAuth({
-  database: mongodbAdapter(client.db()),
+  ...(databaseConfig && { database: databaseConfig }),
   emailAndPassword: {
     enabled: true,
   },
