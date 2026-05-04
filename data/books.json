@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "description": "A dazzling novel about all the choices that go into a life well lived. Between life and death there is a library, and within that library, the shelves go on forever.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "2",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship that teaches you how to write clean, maintainable code. Even bad code can function, but clean code matters.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "3",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "A landmark volume in science writing that explores the mysteries of the universe, from the Big Bang to black holes.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "4",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A portrait of the Jazz Age in all of its decadence and excess, exploring themes of wealth, love, and the American Dream.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "5",
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "description": "An in-depth look at JavaScript that separates the good parts from the bad, helping you write more effective code.",
+    "category": "Tech",
+    "available_quantity": 2,
+    "image_url": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "6",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A groundbreaking exploration of evolution from the gene's perspective, revolutionizing our understanding of natural selection.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "7",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A gripping tale of racial injustice and childhood innocence in the American South during the 1930s.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "8",
+    "title": "Design Patterns",
+    "author": "Erich Gamma",
+    "description": "Capturing a wealth of experience in software design, this book presents 23 patterns that solve common design problems.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "9",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "description": "Explores the fifteen billion years of cosmic evolution that have brought us to where we are, from the origins of life to the future of humanity.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "10",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian social science fiction novel that explores the consequences of totalitarianism, mass surveillance, and repressive regimentation.",
+    "category": "Story",
+    "available_quantity": 8,
+    "image_url": "https://images.unsplash.com/photo-1531928351158-2f736078e0a1?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "11",
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "description": "A guide to creating working, maintainable code that delights users. Covers topics from personal responsibility to architectural techniques.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=600&fit=crop"
+  },
+  {
+    "id": "12",
+    "title": "The Origin of Species",
+    "author": "Charles Darwin",
+    "description": "Darwin's groundbreaking work on evolutionary biology that introduced the scientific theory of natural selection.",
+    "category": "Science",
+    "available_quantity": 2,
+    "image_url": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=600&fit=crop"
+  }
+]
