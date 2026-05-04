@@ -25,6 +25,7 @@ export default function RegisterPage() {
         email,
         password,
         image: photoUrl || undefined,
+        callbackURL: "/login",
       });
 
       if (error) {
@@ -34,8 +35,9 @@ export default function RegisterPage() {
 
       toast.success("Registration successful! Please login.");
       router.push("/login");
-    } catch (err) {
-      toast.error("An unexpected error occurred");
+    } catch (err: any) {
+      const message = err?.message || "An unexpected error occurred";
+      toast.error(message);
     } finally {
       setLoading(false);
     }
